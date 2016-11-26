@@ -1,0 +1,40 @@
+.list-group-item a { 
+	font-size: 13px;
+	font-weight: normal;
+	border: 1px solid #E52900;
+	padding: 5px;
+	color: #E52900;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+.list-group-item a.complete { 
+	margin-left: 15px;
+	border: 1px solid #6BF070;
+	padding: 5px;
+	color: #6BF070;
+}
+
+.list-group-item  { 
+	font-size: 18px;
+	font-weight: bold;
+	padding: 20px;
+}
+
+.jumbotron {
+	margin-top: 30px;
+}
+.date {
+	font-size: 15px !important;
+	color: #948D89 !important;
+}
+
+.btn-primary{
+	background-color: #222222;
+    border-color: #222222;
+}
+
+
+#messageOK{
+	font-size: 16px;
+}

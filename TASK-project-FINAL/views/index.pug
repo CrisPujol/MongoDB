@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .container.theme-showcase(role='main')
+    h1= title
+    .row
+      .col-md-6.col-offset-3
+        form(action='/task', method='POST', role='form')
+            .form-group
+              label(for='') Descripcion
+              input.form-control(type='text', name='desc', autofocus, placeholder='Add yout task...')
+            button.btn.btn-primary(type='submit') Submit    
+        .jumbotron
+          ul#tasks.list-group
+            each task,index in pending
+              li.list-group-item(data-index=task._id)=task.desc
+                p.date=task.time
+                a(class="delete", href="#") Delete
+                a(class="complete", href="#") Complete
+          div
+            p#messageOK You delete task        

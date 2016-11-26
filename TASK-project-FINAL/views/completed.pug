@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  .container.theme-showcase(role='main')
+    h1= title
+    .row
+      .col-md-6.col-offset-3
+        .jumbotron
+          ul#tasks.list-group
+            each task,index in completed
+              li.list-group-item(data-index=task.id)=task.desc
+                p.date=task.dateFinish
+                a(class="delete", href="#") Delete
